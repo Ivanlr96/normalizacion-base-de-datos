@@ -1,31 +1,14 @@
+# Ejercicio de Normalización de Base de Datos
 
-![alt text](image-1.png)
+## Descripción
 
+Este ejercicio tiene como objetivo practicar la normalización de una base de datos relacional siguiendo las **formas normales** (1NF, 2NF y 3NF). Se parte de una tabla inicial que contiene información sobre estudiantes, aulas y cursos, donde se observan redundancias y grupos repetitivos.
 
-![alt text](image-2.png)
+## Normalización de la tabla
+![Tables](image-1.png)
 
+## Diagrama de Chen
+![Chen](image-2.png)
 
-```mermaid
-
-erDiagram
-    STUDENT {
-        long id_student PK
-        string name_student
-        string id_classroom FK
-    }
-
-    CLASSROOM {
-        string id_classroom PK
-        string classroom_description
-    }
-
-    COURSE {
-        long id_course PK
-        string course_name
-        string id_classroom FK
-    }
-
-    STUDENT }o--|| CLASSROOM : "Study on"
-    CLASSROOM ||--o{ COURSE : "Has"
-    ```
-
+## Diagrama de patas de gallo
+![Crows](image-3.png)
