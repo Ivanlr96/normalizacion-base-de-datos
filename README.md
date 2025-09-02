@@ -2,7 +2,7 @@
 ![alt text](image-1.png)
 
 
-![Chen Diagram](diagrama-chen1.drawio.png)
+![alt text](image-2.png)
 
 
 ```mermaid
